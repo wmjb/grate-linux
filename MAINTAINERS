@@ -12374,6 +12374,13 @@ L:	platform-driver-x86@vger.kernel.org
 S:	Supported
 F:	drivers/platform/surface/surfacepro3_button.c
 
+MICROSOFT SURFACE RT
+M:	Jonas Schwöbel <jonasschwoebel@yahoo.de>
+S:	Supported
+F:	drivers/power/supply/surface-rt-battery.c
+F:	arch/arm/boot/dts/tegra30-microsoft-surface-rt.dts
+F:	arch/arm/boot/dts/tegra30-microsoft-surface-rt-efi.dts
+
 MICROSOFT SURFACE SYSTEM AGGREGATOR SUBSYSTEM
 M:	Maximilian Luz <luzmaximilian@gmail.com>
 L:	platform-driver-x86@vger.kernel.org

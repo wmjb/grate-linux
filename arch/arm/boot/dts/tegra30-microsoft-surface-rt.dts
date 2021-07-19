@@ -116,6 +116,12 @@
 		status = "okay";
 		clock-frequency = <400000>;
 
+		battery@a {
+			compatible = "microsoft,surface-rt-battery";
+			reg = <0x0a>;
+			powerdown-gpios = <&gpio TEGRA_GPIO(N, 3) GPIO_ACTIVE_LOW>;
+		};
+
 		pmic: tps65911@2d {
 			compatible = "ti,tps65911";
 			reg = <0x2d>;
