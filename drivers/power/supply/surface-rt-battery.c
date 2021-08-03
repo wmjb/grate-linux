@@ -146,7 +146,7 @@ static int srt_battery_probe(struct i2c_client *client,
 	srt_battery->client = client;
 	srt_battery->dev = dev;
 
-	srt_battery->powerdown_gpio = devm_gpiod_get_optional(srt_battery->dev, "powerdown", GPIOD_OUT_LOW);
+	srt_battery->powerdown_gpio = devm_gpiod_get(srt_battery->dev, "powerdown", GPIOD_OUT_LOW);
 	if (IS_ERR(srt_battery->powerdown_gpio)) {
 		ret = PTR_ERR(srt_battery->powerdown_gpio);
 		dev_err(srt_battery->dev, "Failed to get powerdown");
