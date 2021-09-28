@@ -115,6 +115,7 @@ properties:
               - nvidia,dalmore
               - nvidia,roth
               - nvidia,tn7
+              - microsoft,surface-2
           - const: nvidia,tegra114
       - items:
           - enum:
