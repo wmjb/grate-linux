@@ -10,7 +10,7 @@ extern const struct smp_operations acpi_parking_protocol_ops;
 
 static inline bool acpi_parking_protocol_available(void)
 {
-	return IS_ENABLED(CONFIG_SMP) && of_machine_is_compatible("microsoft,surface-rt-efi");
+	return IS_ENABLED(CONFIG_SMP) && (of_machine_is_compatible("microsoft,surface-rt-efi") || of_machine_is_compatible("lenovo,ideapad-yoga-11"));
 }
 
 #endif /* __ASM_ARM_ACPI_PARKING_PROTOCOL_H */
